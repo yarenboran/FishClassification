@@ -29,7 +29,7 @@ git clone <repository-url>
 cd fish-image-classification
 ```
 
-Dependencies:
+## Dependencies
 Python 3.x
 TensorFlow
 Keras
@@ -39,14 +39,16 @@ Matplotlib
 Seaborn
 sci-kit-learn
 
-Dataset
+## Dataset
 The dataset used for this project is the Large-Scale Fish Dataset, which contains images of various fish species. The dataset is structured into separate folders for each species, with images stored in .png format.
 
-Data Preparation
+## Data Preparation
 Importing Necessary Libraries: The project starts by importing all required libraries for data handling, image processing, model creation, and visualization.
 Extracting Image Paths and Labels: The image paths and labels are extracted from the dataset, excluding ground truth images.
 Visualizing Sample Images and Class Distribution: Sample images from each class of fish are visualized, along with the distribution of classes to check for class imbalance.
-Model Architecture
+
+
+## Model Architecture
 The model is built using the Keras Sequential API with the following layers:
 
 Input Layer: Flatten layer to convert 28x28 images to a 1D array.
@@ -55,8 +57,8 @@ Output Layer: A Dense layer with softmax activation to classify into 9 fish spec
 Training
 The model is compiled using the Adagrad optimizer and categorical crossentropy loss function. Early stopping and learning rate schedules are implemented to optimize training and prevent overfitting. The model is trained for 100 epochs, with evaluation metrics including accuracy and loss.
 
-Results
+## Results
 After training, the model achieves an accuracy of approximately 84.05% on the test set. The training and validation losses are monitored throughout the process to ensure that the model is not overfitting.
 
-Conclusion
+## Conclusion
 This project demonstrates the capability of ANN models in image classification tasks, particularly in classifying fish species. The model can be further improved by experimenting with different architectures, hyperparameters, and data augmentation techniques. Future work may include deploying the model in a web application for real-time fish classification.
