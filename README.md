@@ -54,7 +54,8 @@ The model is built using the Keras Sequential API with the following layers:
 Input Layer: Flatten layer to convert 28x28 images to a 1D array.
 Hidden Layers: Several Dense layers with ReLU activation, Batch Normalization, and Dropout layers to prevent overfitting.
 Output Layer: A Dense layer with softmax activation to classify into 9 fish species.
-Training
+
+## Training
 The model is compiled using the Adagrad optimizer and categorical crossentropy loss function. Early stopping and learning rate schedules are implemented to optimize training and prevent overfitting. The model is trained for 100 epochs, with evaluation metrics including accuracy and loss.
 
 ## Results
